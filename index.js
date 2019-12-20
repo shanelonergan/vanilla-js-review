@@ -3,9 +3,8 @@ import './style.css';
 
 // Write Javascript code!
 const appDiv = document.getElementById('app');
-const tooltipDiv = document.querySelector('.tooltip')
+const tooltipDiv = document.querySelector('.buttonContainer')
 console.log(tooltipDiv)
-appDiv.innerText = `JS Starter`;
 
 const button = document.createElement('button') 
 button.style = 'color:green;border-color:red;width:15vw;height:5vh;font-weight:bold;font-size:2.5vw;margin:1vh'
