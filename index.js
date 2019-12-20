@@ -3,15 +3,23 @@ import './style.css';
 
 // Write Javascript code!
 const appDiv = document.getElementById('app');
-appDiv.innerHTML = `<h1>JS Starter</h1>`;
+const tooltipDiv = document.querySelector('.tooltip')
+console.log(tooltipDiv)
+appDiv.innerText = `JS Starter`;
 
-const button = document.createElement('div')
-button.innerHTML = "<button type='button' style='color:green;border-color:red;width:15vw;height:5vh;font-weight:bold;font-size:2.5vw;margin:1vh'> Click me! </button>" 
-appDiv.appendChild(button)
+const button = document.createElement('button') 
+button.style = 'color:green;border-color:red;width:15vw;height:5vh;font-weight:bold;font-size:2.5vw;margin:1vh'
+button.class='tooltiptext'
+button.innerText = 'Click Me!'
+button.type = 'button'
 
-  const displayColors = (borderHex, textHex) => {
-    
-  }
+tooltipDiv.appendChild(button)
+
+console.log(tooltipDiv)
+
+const displayColors = (borderHex, textHex) => {
+  
+}
 
 const makeButton = () => {
   const button = document.createElement('div')
@@ -24,7 +32,7 @@ const makeButton = () => {
   appDiv.appendChild(button)
 
   button.addEventListener('click', makeButton)
-  button.addEventListener('hover', )
+  // button.addEventListener('hover', )
 
 }
 
